@@ -3,7 +3,7 @@
 
 {% block append %}
 	<a href="/newsadd/" title="新增新聞">
-	<img src="{% static "images/append.png" %}" alt="新增新聞" width="32" height="32" /></a>
+	<img src="{% static "images/append.png" %}" alt="新增新聞" width="60" height="32" /></a>
 {% endblock %}
 
 {% block content %}
@@ -21,8 +21,8 @@
 			<td><a href="/newsedit/{{unit.id}}/">{{ unit.title }}</a></td>
 			<td>{{ unit.pubtime }}</td>
 			<td>
-				<a href="/newsedit/{{unit.id}}/" title="新聞編輯"> <img src="{% static "images/note_edit.png" %}"  width="16" height="16" /></a>
-				<a href="/newsdelete/{{unit.id}}/" title="新聞刪除"><img src="{% static "images/cross.png" %}" width="16" height="16" /></a>
+				<a href="/newsedit/{{unit.id}}/" title="新聞編輯"> <img src="{% static "images/note_edit.png" %}"  width="50" height="16" /></a>
+				<a href="/newsdelete/{{unit.id}}/" title="新聞刪除"><img src="{% static "images/cross.png" %}" width="50" height="16" /></a>
 			</td>
 			</tr>
 		{% empty %}
